@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans' ,sans-serif;
+}
+:root {
+  --green-color-h3: #c5f82a;
+  --white-color-letters: #ffffff;
+  --grey-color-p: #333333;
+  --grey-color-letter: #666666;
+  --dark-grey-color: #1f1f1f;
+  --black-color-off: #141414;
+}
+/* MAIN STYLES */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color-off);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: var(--white-color-letters);
+}
+/* HEADER STYLE */
+.header_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.container_img {
+  height: 120px;
+  width: 120px;
+}
+.container_img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100vmax;
+}
+.name_profile {
+  font-weight: 600;
+}
+.proffession {
+  font-weight: 400;
+}
+/* BUTTONS */
+.container_links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  height: 140px;
+  width: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 40px;
+  gap: 20px;
+  box-shadow: 0px 0px 5px 1px var(--grey-color-p) inset;
+  -webkit-box-shadow: 0px 0px 5px 1px var(--grey-color-p) inset;
+  -moz-box-shadow: 0px 0px 5px 1px var(--grey-color-p) inset;
+  background-color: var(--dark-grey-color);
+  border-radius: 20px;
+  transition: all .25s ease-in;
+  cursor: pointer;
+}
+.btn:hover {
+  gap: 25px;
+  background-color: #222;
+  i {
+    scale: 1.2;
+  }
+}
+i {
+  font-size: 60px;
+  color: var(--white-color-letters);
+  transition: all .25s ease-in;
+}
+.platform_name {
+  display: flex;
+  flex-direction: column;
+}
+.platform_h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grey-color-letter);
+}
+.platform_p {
+  font-size: 1.1rem;
+  color: var(--grey-color-letter);
+  font-weight: 600;
+}
+@media screen and (max-width: 715px) {
+  body {
+    height: auto;
+  }
+  .container {
+    padding: 20px 0;
+    gap: 0px;
+  }
+  .header_container {
+    scale: .9;
+    gap: 5px;
+  }
+  .container_links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0px;
+  }
+  .btn {
+    scale: .9;
+    height: 110px;
+  }
+  .platform_h1,
+  .platform_p,
+  i,
+  i:hover {
+    scale: .9;
+  }
+}
