@@ -17,7 +17,7 @@ const LinksContainer = () => {
         body='Resume' 
         clase='bi bi-file-text'
         username='@googledrive'
-        enlace='https://drive.google.com/file/d/1G9xj2tdqsp9CUA0JC6wxwULmUlgMopoc/view?usp=drive_link' />
+        enlace='https://drive.google.com/file/d/183J0wEc4bcQh8aku9zTmE1CB-t4kckPW/view?usp=sharing' />
       <Link 
         body='X' 
         clase='bi bi-twitter-x'
