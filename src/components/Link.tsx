@@ -5,12 +5,13 @@ type Props = {
   clase: string
   username: string
   enlace: string
+  dni: string
 }
 
-const Link = ({ body, clase, username, enlace } : Props) => {
+const Link = ({ body, clase, username, enlace, dni } : Props) => {
   return (
     <>
-      <a href={enlace} target='_blank'>
+      <a id={dni} href={enlace} target='_blank'>
         <div className='btn'>
           <i className={clase}></i>
           <div className='platform_name'>
